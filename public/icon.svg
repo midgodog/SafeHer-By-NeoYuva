@@ -1,0 +1,44 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A855F7" />
+      <stop offset="100%" style="stop-color:#EC4899" />
+    </linearGradient>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF" />
+      <stop offset="100%" style="stop-color:#F3E8FF" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with gradient -->
+  <rect width="180" height="180" rx="40" fill="url(#bgGradient)" />
+  
+  <!-- Shield icon -->
+  <g transform="translate(40, 30)">
+    <!-- Shield body -->
+    <path 
+      d="M50 10L15 25V65C15 95 50 115 50 115C50 115 85 95 85 65V25L50 10Z" 
+      fill="url(#shieldGradient)" 
+      stroke="white" 
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    
+    <!-- Checkmark inside shield -->
+    <path 
+      d="M35 60L45 72L65 48" 
+      fill="none" 
+      stroke="#A855F7" 
+      stroke-width="6" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
+    />
+    
+    <!-- Heart accent -->
+    <path 
+      d="M50 90C50 90 38 80 38 72C38 67 42 64 47 64C49 64 50 65 50 65C50 65 51 64 53 64C58 64 62 67 62 72C62 80 50 90 50 90Z" 
+      fill="#EC4899"
+    />
+  </g>
+</svg>

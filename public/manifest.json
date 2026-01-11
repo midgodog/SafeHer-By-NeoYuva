@@ -1,0 +1,67 @@
+{
+  "name": "SafeHer AI - Women Safety Companion",
+  "short_name": "SafeHer",
+  "description": "AI-powered women's safety companion with real-time risk assessment, emergency resources, and incident documentation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdf4ff",
+  "theme_color": "#a855f7",
+  "orientation": "portrait-primary",
+  "categories": ["safety", "health", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-home.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "label": "Home Dashboard"
+    },
+    {
+      "src": "/screenshot-chat.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "label": "AI Chat Interface"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Emergency SOS",
+      "short_name": "SOS",
+      "description": "Activate emergency mode",
+      "url": "/?sos=true",
+      "icons": [{ "src": "/icon-sos.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Log Incident",
+      "short_name": "Log",
+      "description": "Document a safety incident",
+      "url": "/?page=incidents",
+      "icons": [{ "src": "/icon-log.png", "sizes": "96x96" }]
+    }
+  ]
+}

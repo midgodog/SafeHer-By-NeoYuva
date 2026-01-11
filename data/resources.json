@@ -1,0 +1,222 @@
+{
+  "location": {
+    "name": "Chiplun, Maharashtra",
+    "coordinates": {
+      "lat": 17.5333,
+      "lng": 73.5167
+    }
+  },
+  "emergencyServices": [
+    {
+      "id": "police-100",
+      "name": "Police Emergency",
+      "number": "100",
+      "type": "police",
+      "description": "24/7 Emergency Police Response",
+      "address": "Chiplun Police Station, Main Road, Chiplun",
+      "distance": "0.8 km"
+    },
+    {
+      "id": "ambulance-102",
+      "name": "Ambulance",
+      "number": "102",
+      "type": "ambulance",
+      "description": "Government Emergency Ambulance",
+      "address": "District Hospital, Chiplun",
+      "distance": "1.2 km"
+    },
+    {
+      "id": "fire-101",
+      "name": "Fire Brigade",
+      "number": "101",
+      "type": "fire",
+      "description": "Fire Emergency Response",
+      "address": "Fire Station, Chiplun",
+      "distance": "1.5 km"
+    }
+  ],
+  "healthServices": [
+    {
+      "id": "district-hospital",
+      "name": "Chiplun District Hospital",
+      "number": "02355-252255",
+      "type": "hospital",
+      "description": "Government District Hospital - 24/7 Emergency",
+      "address": "Hospital Road, Chiplun, Maharashtra 415605",
+      "distance": "1.2 km",
+      "open24Hours": true,
+      "coordinates": {
+        "lat": 17.5289,
+        "lng": 73.5123
+      }
+    },
+    {
+      "id": "sahyadri-hospital",
+      "name": "Sahyadri Hospital",
+      "number": "02355-253456",
+      "type": "hospital",
+      "description": "Private Multi-specialty Hospital",
+      "address": "Main Road, Chiplun, Maharashtra 415605",
+      "distance": "0.9 km",
+      "open24Hours": true,
+      "coordinates": {
+        "lat": 17.5312,
+        "lng": 73.5189
+      }
+    },
+    {
+      "id": "lifeline-clinic",
+      "name": "Lifeline Medical Center",
+      "number": "02355-251789",
+      "type": "clinic",
+      "description": "Private Clinic with Emergency Services",
+      "address": "Market Area, Chiplun, Maharashtra 415605",
+      "distance": "0.5 km",
+      "open24Hours": false,
+      "coordinates": {
+        "lat": 17.5345,
+        "lng": 73.5201
+      }
+    },
+    {
+      "id": "primary-health",
+      "name": "Primary Health Center",
+      "number": "02355-250123",
+      "type": "clinic",
+      "description": "Government Primary Health Center",
+      "address": "Taluka Office Road, Chiplun",
+      "distance": "1.8 km",
+      "open24Hours": false,
+      "coordinates": {
+        "lat": 17.5278,
+        "lng": 73.5098
+      }
+    }
+  ],
+  "helplines": [
+    {
+      "id": "women-helpline",
+      "name": "Women Helpline",
+      "number": "1090",
+      "type": "helpline",
+      "description": "24/7 Women's Safety & Support",
+      "category": "women"
+    },
+    {
+      "id": "women-commission",
+      "name": "National Commission for Women",
+      "number": "7827170170",
+      "type": "helpline",
+      "description": "NCW Helpline for Women",
+      "category": "women"
+    },
+    {
+      "id": "domestic-violence",
+      "name": "Domestic Violence Helpline",
+      "number": "181",
+      "type": "helpline",
+      "description": "Support for Domestic Violence Victims",
+      "category": "women"
+    },
+    {
+      "id": "mental-health",
+      "name": "iCall Mental Health",
+      "number": "9152987821",
+      "type": "helpline",
+      "description": "Professional Counseling Support",
+      "category": "mental"
+    },
+    {
+      "id": "vandrevala",
+      "name": "Vandrevala Foundation",
+      "number": "18602662345",
+      "type": "helpline",
+      "description": "24/7 Mental Health Support",
+      "category": "mental"
+    },
+    {
+      "id": "child-helpline",
+      "name": "Child Helpline",
+      "number": "1098",
+      "type": "helpline",
+      "description": "Support for Children in Distress",
+      "category": "child"
+    },
+    {
+      "id": "cyber-crime",
+      "name": "Cyber Crime Helpline",
+      "number": "1930",
+      "type": "helpline",
+      "description": "Report Online Harassment & Crimes",
+      "category": "cyber"
+    }
+  ],
+  "safePlaces": [
+    {
+      "id": "chiplun-police",
+      "name": "Chiplun Police Station",
+      "type": "police-station",
+      "description": "Main Police Station - 24/7 Safe Haven",
+      "address": "Main Road, Chiplun, Maharashtra 415605",
+      "distance": "0.8 km",
+      "open24Hours": true,
+      "number": "02355-252100",
+      "coordinates": {
+        "lat": 17.5321,
+        "lng": 73.5156
+      }
+    },
+    {
+      "id": "bus-stand",
+      "name": "Chiplun ST Bus Stand",
+      "type": "public-place",
+      "description": "Busy Public Transport Hub",
+      "address": "Bus Stand Area, Chiplun",
+      "distance": "0.6 km",
+      "open24Hours": true,
+      "coordinates": {
+        "lat": 17.5338,
+        "lng": 73.5178
+      }
+    },
+    {
+      "id": "railway-station",
+      "name": "Chiplun Railway Station",
+      "type": "public-place",
+      "description": "Railway Station with Security",
+      "address": "Station Road, Chiplun",
+      "distance": "1.0 km",
+      "open24Hours": true,
+      "coordinates": {
+        "lat": 17.5298,
+        "lng": 73.5234
+      }
+    },
+    {
+      "id": "cafe-24",
+      "name": "Highway Cafe",
+      "type": "cafe",
+      "description": "24-Hour Restaurant on Highway",
+      "address": "Mumbai-Goa Highway, Chiplun",
+      "distance": "1.5 km",
+      "open24Hours": true,
+      "coordinates": {
+        "lat": 17.5256,
+        "lng": 73.5289
+      }
+    },
+    {
+      "id": "petrol-pump",
+      "name": "Indian Oil Petrol Pump",
+      "type": "public-place",
+      "description": "24/7 Petrol Pump with CCTV",
+      "address": "Highway Road, Chiplun",
+      "distance": "1.1 km",
+      "open24Hours": true,
+      "coordinates": {
+        "lat": 17.5367,
+        "lng": 73.5145
+      }
+    }
+  ]
+}

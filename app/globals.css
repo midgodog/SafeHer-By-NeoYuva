@@ -1,0 +1,349 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Purple-Pink Safety Theme - WCAG AA Compliant */
+  --background: oklch(0.98 0.01 310);
+  --foreground: oklch(0.15 0.02 310);
+  --card: oklch(1 0 0 / 0.85);
+  --card-foreground: oklch(0.15 0.02 310);
+  --popover: oklch(1 0 0 / 0.95);
+  --popover-foreground: oklch(0.15 0.02 310);
+  --primary: oklch(0.5 0.22 310);
+  --primary-foreground: oklch(0.98 0.01 310);
+  --secondary: oklch(0.92 0.03 310);
+  --secondary-foreground: oklch(0.25 0.05 310);
+  --muted: oklch(0.95 0.02 310);
+  --muted-foreground: oklch(0.4 0.05 310);
+  --accent: oklch(0.65 0.18 350);
+  --accent-foreground: oklch(0.1 0.02 310);
+  --destructive: oklch(0.5 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.85 0.03 310);
+  --input: oklch(0.92 0.02 310);
+  --ring: oklch(0.5 0.22 310);
+
+  /* Custom colors for the app - Improved contrast */
+  --user-message: oklch(0.9 0.06 310);
+  --ai-message: oklch(1 0 0);
+  --risk-low: oklch(0.45 0.18 145);
+  --risk-medium: oklch(0.55 0.18 85);
+  --risk-high: oklch(0.5 0.22 25);
+  --emergency-purple: oklch(0.5 0.22 310);
+  --emergency-blue: oklch(0.45 0.2 250);
+  --emergency-orange: oklch(0.55 0.2 50);
+  --emergency-green: oklch(0.45 0.18 145);
+
+  --chart-1: oklch(0.5 0.22 310);
+  --chart-2: oklch(0.65 0.18 350);
+  --chart-3: oklch(0.45 0.18 145);
+  --chart-4: oklch(0.55 0.18 85);
+  --chart-5: oklch(0.5 0.22 25);
+  --radius: 1rem;
+  --sidebar: oklch(0.98 0.01 310);
+  --sidebar-foreground: oklch(0.15 0.02 310);
+  --sidebar-primary: oklch(0.5 0.22 310);
+  --sidebar-primary-foreground: oklch(0.98 0.01 310);
+  --sidebar-accent: oklch(0.92 0.03 310);
+  --sidebar-accent-foreground: oklch(0.25 0.05 310);
+  --sidebar-border: oklch(0.85 0.03 310);
+  --sidebar-ring: oklch(0.5 0.22 310);
+}
+
+.dark {
+  --background: oklch(0.12 0.02 310);
+  --foreground: oklch(0.95 0.01 310);
+  --card: oklch(0.18 0.02 310 / 0.9);
+  --card-foreground: oklch(0.95 0.01 310);
+  --popover: oklch(0.15 0.02 310 / 0.98);
+  --popover-foreground: oklch(0.95 0.01 310);
+  --primary: oklch(0.7 0.18 310);
+  --primary-foreground: oklch(0.1 0.02 310);
+  --secondary: oklch(0.25 0.03 310);
+  --secondary-foreground: oklch(0.92 0.02 310);
+  --muted: oklch(0.22 0.02 310);
+  --muted-foreground: oklch(0.7 0.03 310);
+  --accent: oklch(0.65 0.15 350);
+  --accent-foreground: oklch(0.95 0.01 310);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.28 0.03 310);
+  --input: oklch(0.22 0.02 310);
+  --ring: oklch(0.7 0.18 310);
+
+  --user-message: oklch(0.32 0.1 310);
+  --ai-message: oklch(0.22 0.02 310);
+
+  --chart-1: oklch(0.7 0.18 310);
+  --chart-2: oklch(0.65 0.15 350);
+  --chart-3: oklch(0.6 0.16 145);
+  --chart-4: oklch(0.65 0.15 85);
+  --chart-5: oklch(0.55 0.2 25);
+  --sidebar: oklch(0.15 0.02 310);
+  --sidebar-foreground: oklch(0.95 0.01 310);
+  --sidebar-primary: oklch(0.7 0.18 310);
+  --sidebar-primary-foreground: oklch(0.1 0.02 310);
+  --sidebar-accent: oklch(0.25 0.03 310);
+  --sidebar-accent-foreground: oklch(0.92 0.02 310);
+  --sidebar-border: oklch(0.28 0.03 310);
+  --sidebar-ring: oklch(0.7 0.18 310);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-user-message: var(--user-message);
+  --color-ai-message: var(--ai-message);
+  --color-risk-low: var(--risk-low);
+  --color-risk-medium: var(--risk-medium);
+  --color-risk-high: var(--risk-high);
+  --color-emergency-purple: var(--emergency-purple);
+  --color-emergency-blue: var(--emergency-blue);
+  --color-emergency-orange: var(--emergency-orange);
+  --color-emergency-green: var(--emergency-green);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Focus visible styles for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+
+  /* Reduced motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Custom gradient background */
+.gradient-bg {
+  background: linear-gradient(
+    135deg,
+    oklch(0.88 0.08 310) 0%,
+    oklch(0.9 0.06 330) 25%,
+    oklch(0.92 0.04 350) 50%,
+    oklch(0.9 0.06 330) 75%,
+    oklch(0.88 0.08 310) 100%
+  );
+  min-height: 100vh;
+}
+
+.dark .gradient-bg {
+  background: linear-gradient(
+    135deg,
+    oklch(0.15 0.04 310) 0%,
+    oklch(0.13 0.03 330) 25%,
+    oklch(0.12 0.02 350) 50%,
+    oklch(0.13 0.03 330) 75%,
+    oklch(0.15 0.04 310) 100%
+  );
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass {
+  background: rgba(30, 20, 40, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Risk indicator animations */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+}
+
+.pulse-animation {
+  animation: pulse-ring 2s ease-in-out infinite;
+}
+
+/* SOS button pulse */
+@keyframes sos-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(239, 68, 68, 0);
+  }
+}
+
+.sos-pulse {
+  animation: sos-pulse 1.5s ease-in-out infinite;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.7 0.1 310);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.6 0.15 310);
+}
+
+/* Message animations */
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.3s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.3s ease-out;
+}
+
+/* Typing indicator */
+@keyframes typing-dot {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+}
+
+.typing-dot {
+  animation: typing-dot 1.4s ease-in-out infinite;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Safe area for mobile devices */
+.safe-area-inset-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+/* Touch target minimum size */
+.touch-target {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+  .glass {
+    background: Canvas;
+    border: 1px solid CanvasText;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .gradient-bg {
+    background: white !important;
+  }
+
+  .glass {
+    background: white !important;
+    backdrop-filter: none !important;
+  }
+}
